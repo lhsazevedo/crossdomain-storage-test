@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Aude</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <style>
+        .loading {
+            width: 150px;
+            height: 16px;
+            background: #ccc;
+            animation: pulse 1s infinite;
+            border-radius: 200px;
+        }
+
+        @keyframes pulse {
+            0% {
+                background-color: #ddd;
+            }
+            50% {
+                background-color: #eee;
+            }
+            100% {
+                background-color: #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <iframe id="checkIframe" src="http://localhost:5000/check-iframe.html"></iframe>
+    <div class="container" style="max-width: 400px;">
+        <h1 class="title is-1">Portal Aude</h1>
+        <div id="loading" class="loading"></div>
+        <div id="user" style="display: none;">Lucas Henrique <a href="#">Sair</a></div>
+        <div id="login" style="display: none;"><a href="http://localhost:5000">Entrar</a></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
